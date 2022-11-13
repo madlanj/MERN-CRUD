@@ -1,0 +1,27 @@
+GET  http://localhost:5000/users
+
+###
+GET  http://localhost:5000/user/6370e3056c8fd734f94efcac
+
+###
+POST  http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "name" : "Hamzah",
+    "email" : "hazah@gmail.com",
+    "gender" : "Male"
+}
+
+###
+PATCH   http://localhost:5000/user/6370e3056c8fd734f94efcac
+Content-Type: application/json
+
+{
+    "name" : "Muhammad Adlan",
+    "email" : "adlanjazuli@gmail.com",
+    "gender" : "Male"
+}
+
+###
+DELETE   http://localhost:5000/user/6370e3056c8fd734f94efcac
